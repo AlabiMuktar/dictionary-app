@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Oxanium:wght@400;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary App</title>
+</head>
+<body class="dark">
+    <div class="container">
+        <nav>
+            <span class="material-symbols-outlined book">library_books</span>
+            <div class="side-nav">
+                <div class="font">
+                    <div class="font-section" style="display: flex; align-items: center;">
+                        <h3>Serif</h3>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="vl"></div>
+                </div>
+                <div class="control">
+                    <div class="switch"></div>
+                    <i class="fa-regular fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="font-name">
+            <h3>Oxanium</h3>
+            <h3>Quicksand</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="word-search" placeholder="Search a word....." required>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="material-symbols-outlined" id="close">close</span>
+        </div>
+        <div class="wrapper">
+            <div class="recommend">
+                <div class="word">
+                    <h1 class="wordChild"></h1>
+                    <p style="color: #b592d2" class="phonetics"></p>
+                </div>
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="main">
+                <div class="speech">
+                    <p style="font-style: italic; margin-top: 1.5rem;" id="partOfSpeech"></p>
+                    <hr>
+                </div>
+                <div class="meaning">
+                    <p style="color:#9a9a9a; margin-top: 2rem">Meaning</p>
+                    <ul class="list">
+                    </ul>
+                </div>  
+                <div class="figure">
+                    <p>Synonyms</p>
+                    <p style="color: #a365d0; " id="synonyms"></p>
+                </div>
+                <div class="speech-2">
+                    <p style="font-style: italic; margin-top: 1.5rem;" class="part"></p>
+            
+                    <hr>
+                </div>
+                <div class="meaning-2">
+                    <p style="color:#9a9a9a; margin-top: 2rem">Meaning</p>
+                    <ul>
+                        <li id="definition-2"></li>
+                        <p style="color: #929292;" id="example"></p>
+                    </ul>
+                </div>
+                <div class="link">
+                    <p style="color: #7b7b7b;">Source</p>
+                    <div class="weblink">
+                        <a href="" style="color: #6d6d6d;" id="source"></a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="footer">The English Dictionary</h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
